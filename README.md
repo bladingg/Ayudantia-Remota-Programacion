@@ -6,7 +6,7 @@ Este repositorio fue creado con la intención de ayudar a todo quien necesite un
 
 Carpeta M (Codigos de bladingg)
 
-Carpeta C (Codigos de TheArsenalz)
+Carpeta C (Codigos de TheArsenalz4)
 
 --------------------------------------
 
