@@ -2,8 +2,7 @@
 using namespace std;
 
 int main(){
-    int *punt,i;
-    int x[5] = {1, 2, 3, 6, 8};
+    int *punt,i,x[5] = {1, 2, 3, 6, 8};
     punt=&x[0];
     // Imprimir los valores del array usando el puntero
     cout << "Valores del array usando el puntero:" << endl;
