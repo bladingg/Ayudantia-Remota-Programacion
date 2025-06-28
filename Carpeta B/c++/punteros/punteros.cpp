@@ -9,6 +9,10 @@ int main(){
     for(i=0; i<5; i++){
         cout << *(punt+i) << endl;
     }
-    cout << "Hola" << endl;
+    punt[3] = 18;
+    for(i=0; i<5; i++){
+        cout << *(punt+i) << endl;
+    }
+    cout << "Fin" << endl;
     return 0;
 }
