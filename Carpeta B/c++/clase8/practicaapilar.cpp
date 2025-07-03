@@ -47,6 +47,7 @@ int main(int argc, char const *argv[])
     cout << "NULL" << endl;
 
     cout << "Fin" << endl;
-    
+
+    printf("Hola");
     return 0;
 }
