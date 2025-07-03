@@ -109,18 +109,18 @@ int main(int argc, char const *argv[])
   
   pila.estaVacia();
   pila.apilar("https://www.altavista.com");
-  std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
-  pila.estaVacia();
-  pila.apilar("https://www.big.com");
-  std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
-  pila.apilar("https://www.onion.com");
-  std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
-  pila.apilar("");
-  pila.apilar("https://www.google.com");
-  std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
-  pila.apilar("");
-  pila.desapilar();
-  pila.printPila();
+  // std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
+  // pila.estaVacia();
+  // pila.apilar("https://www.big.com");
+  // std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
+  // pila.apilar("https://www.onion.com");
+  // std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
+  // pila.apilar("");
+  // pila.apilar("https://www.google.com");
+  // std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
+  // pila.apilar("");
+  // pila.desapilar();
+  // pila.printPila();
 
   return 0;
 }
