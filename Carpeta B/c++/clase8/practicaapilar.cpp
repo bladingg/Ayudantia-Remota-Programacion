@@ -36,5 +36,15 @@ int main(int argc, char const *argv[])
     cuarto->dato = "Página 4";
     cuarto->siguiente = nullptr; // El último nodo apunta a nullptr 
 
+    cout << "Contenido de la lista enlazada:" << endl;
+
+    // Recorrer e imprimir toda la lista
+    Nodo* actual = cabeza;
+    while (actual != nullptr) {
+        cout << actual->dato << " -> ";
+        actual = actual->siguiente;
+    }
+    cout << "NULL" << endl;
+
     return 0;
 }
