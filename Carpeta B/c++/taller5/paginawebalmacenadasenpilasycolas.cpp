@@ -120,7 +120,7 @@ int main(int argc, char const *argv[])
   // std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
   // pila.apilar("");
   // pila.desapilar();
-  // pila.printPila();
+  pila.printPila();
 
   return 0;
 }
