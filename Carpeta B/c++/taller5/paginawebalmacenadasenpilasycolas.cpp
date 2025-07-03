@@ -3,7 +3,8 @@
 
 using namespace std;
 
-typedef struct Nodo
+//typedef
+struct Nodo
 {
 public:
   std::string url; // URL de la página web almacenada
