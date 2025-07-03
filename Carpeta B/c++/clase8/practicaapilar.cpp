@@ -45,5 +45,8 @@ int main(int argc, char const *argv[])
         actual = actual->siguiente;
     }
     cout << "NULL" << endl;
+
+    cout << "Fin" << endl;
+    
     return 0;
 }
