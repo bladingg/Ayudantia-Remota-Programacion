@@ -74,21 +74,24 @@ public:
     return ""; // Valor por defecto si la pila está vacía
   }
 
-  std::string estaVacia()
+  void estaVacia()
+  // std::string estaVacia()
   {
     if (cima == nullptr)
     {
-      return "La pila esta vacia.";
+      std::cout << "La pila esta vacia." << std::endl;
+      // return "La pila esta vacia.";
     }
     else
     {
-      return "La pila no esta vacia.";
+      std::cout << "La pila no esta vacia." << std::endl;
+      // return "La pila no esta vacia.";
     }
   }
 
   void printPila()
   {
-    Nodo* temp = cima;
+    Nodo* temp = cima; //3
     if (temp == nullptr)
     {
       std::cout << "La pila esta vacia.\n";
@@ -108,9 +111,13 @@ int main(int argc, char const *argv[])
   Pila pila;
   
   pila.estaVacia();
-  pila.apilar("https://www.altavista.com");
+  pila.apilar("3");
+  pila.apilar("2");
+  pila.apilar("1");
+  // pila.apilar("https://www.altavista.com");
   // std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
-  // pila.estaVacia();
+  pila.estaVacia();
+  pila.printPila();
   // pila.apilar("https://www.big.com");
   // std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
   // pila.apilar("https://www.onion.com");
