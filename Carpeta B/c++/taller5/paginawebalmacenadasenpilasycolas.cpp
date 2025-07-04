@@ -119,7 +119,7 @@ int main(int argc, char const *argv[])
   // pila.apilar("https://www.google.com");
   // std::cout << "Cima de la pila: " << pila.obtenerCima() << std::endl;
   // pila.apilar("");
-  // pila.desapilar();
+  pila.desapilar();
   pila.printPila();
 
   return 0;
