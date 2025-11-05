@@ -1,0 +1,38 @@
+Casos KMP
+Caso 1 :
+Sin patrón(Las palabras no se repiten) y la letra de fallo del patrón es la misma que la inicial
+Solución: Situar al inicio del patrón tras el carácter de fallo. Se representa con -1
+
+Texto = a,b,c, "z"
+patrón = a,b,c, "a"  FALLA EN LA CONCORDANCIA, POR LO CUAL LA PALABRA QUE FALLA LA COLOCA AL LADO DE SU FALLO, PARA SEGUIR BUSCANDO LA PALABRA
+
+
+Caso 2:
+Sin patrón(Las palabras no se repiten) y la letra de falla del patron es distinta que la inicial
+Texto: a, b, c, ? --> Cualquier letra
+Patrón: a, b, c d --> No es la letra d
+
+Se sitúa el patrón por debajo del fallo
+a,b,c,d
+Se representa como un 0,
+
+Caso 3:
+Hay patrón y la letra de la izquierda es diferente al carácter del fallo
+Texto = x,y,x,y, ?
+patrón x,y,x,y, x
+
+¿Qué hace? Separa el patrón encontrado para buscarlo en el mismo texto (x,y)
+Entonces si tenemos x,y,x,y se divide para buscarlo en las posiciones siguientes.
+
+Sitúa al inicio del patrón al inicio del patrón n posiciones a la izquierda del fallo, 
+donde m es el tamaño del patrón (m=2)
+
+Caso 4: Hay patrón y la letra siguiente del patrón a la izquierda es igual al carácter del fallo
+Texto = x,y,x,y
+patrón = x,y,x,y,"x"
+         |        ^
+	 |        | 
+         ----------
+
+Situar al inicio del patrón de la letra siguiente del fallo 
+(caso 1)
